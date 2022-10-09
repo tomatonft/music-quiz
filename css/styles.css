@@ -452,6 +452,15 @@ footer small {
 
   }
 
+  .container h1 {
+    font-size: 18px;
+  
+  }
+
+  #remaining-numbers p {
+    font-size: 18px;
+  }
+
   #result > p,
 #celebration > p {
   font-size: 20px;
