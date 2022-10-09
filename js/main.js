@@ -73,7 +73,7 @@
       if (vw > 600) {
         img_notes.height = 350 - 24 - 14;
       } else {
-        img_notes.height = 350 - 24 - 14 - 60;
+        img_notes.height = 350 - 24 - 14 - 60 - 80;
       }
      
     question.appendChild(img_notes);

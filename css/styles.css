@@ -452,6 +452,10 @@ footer small {
 
   }
 
+  .container {
+    height: calc((var(--vh, 1vh) * 100) - 96px - 24px - 14px - 60px);
+
+  }
   .container h1 {
     font-size: 18px;
   
