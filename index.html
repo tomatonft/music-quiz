@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name=”robots” content=”noindex , nofollow”>
+  <title>音符クイズ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+ <header>
+  <h1><span data-text="お">お</span>
+      <span data-text="ん">ん</span>
+      <span data-text="が">が</span>
+      <span data-text="く">く</span>
+      <span data-text="ク">ク</span>
+      <span data-text="イ">イ</span>
+      <span data-text="ズ">ズ</span>
+  </h1>
+ </header>
+
+ <main>
+   <section class="container">
+    <h1>おとのなまえをこたえましょう</h1>
+    
+    <div id="question"></div>
+    
+    <div id="remaining-numbers">
+      <p></p>
+    </div>
+
+    <ul id="choices"></ul>
+    
+    <div id="btn" class="disabled">つぎへ</div>
+   </section>
+    <section id="correct-answer" class="hidden">
+      <div class="outer-circle">
+        <div class="outer-circle-white">
+          <div class="inner-circle">
+            <div class="inner-circle-white"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="message">
+        <p>せいかい！！</p>
+        <p>よくできました！！</p>
+      </div>
+    </section>
+
+    <section id="wrong-answer" class="hidden">
+      <div class="cross">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="message">
+        <p>ざんねん...</p>
+        <p id="correction"></p>
+      </div>
+    </section>
+
+    <section id="result" class="hidden">
+      <p id ="score-label"></p>
+      <p id ="score-label-message"></p>
+
+      <a href="">もう１かいやってみよう！</a>
+    </section>
+
+    <section id="celebration" class="hidden">
+      <p>すごい！！</p>
+      <p>ぜんもんせいかい！！</p>
+      <div class="balloons">  
+        <i class="bi bi-balloon-fill"></i>
+        <i class="bi bi-balloon-fill"></i>
+        <i class="bi bi-balloon-fill"></i>
+        <i class="bi bi-balloon-fill"></i>
+        <i class="bi bi-balloon-fill"></i>
+      </div>
+      <a href="">もう１かいやってみよう！</a>
+    </section>
+  <!-- </section> -->
+
+ </main>
+
+ <footer>
+  <small>(c) Noriko Tomita</small>
+ </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
