@@ -105,7 +105,8 @@ main {
   padding: 24px;
   border-radius: 4px;
   position: relative;
-  height: calc((var(--vh, 1vh) * 100) - 96px - 24px - 14px);
+  /* height: calc((var(--vh, 1vh) * 100) - 96px - 24px - 14px); */
+  height: calc((var(--vh, 1vh) * 100) - 96px - 35px);
   /* position: fixed; */
   /* margin: 0 auto; */
   max-width: 600px;
@@ -453,7 +454,8 @@ footer small {
   }
 
   .container {
-    height: calc((var(--vh, 1vh) * 100) - 76px - 24px - 14px - 60px);
+    /* height: calc((var(--vh, 1vh) * 100) - 76px - 24px - 14px - 60px); */
+    height: calc((var(--vh, 1vh) * 100) - 76px - 35px);
 
   }
   .container h1 {
