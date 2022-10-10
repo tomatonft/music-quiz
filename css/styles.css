@@ -72,7 +72,6 @@ header h1 span:nth-child(3) {
 }
 header h1 span:nth-child(4) {
   color: #008542;
-  /* transform: translateY(16px); */
 }
 header h1 span:nth-child(5) {
   color: #153692;
@@ -90,21 +89,17 @@ header h1 span:nth-child(7) {
 main {
   width: 100%;
 }
+
 .container {
   margin: 16px auto 0;
-  /* margin: 0 auto 8px; */
   background: #fff;
   border-radius: 4px;
   padding: 24px;
   border-radius: 4px;
   position: relative;
-  /* height: calc((var(--vh, 1vh) * 100) - 96px - 24px - 14px); */
   height: calc((var(--vh, 1vh) * 100) - 96px - 35px);
-  /* position: fixed; */
-  /* margin: 0 auto; */
   max-width: 600px;
   width: calc(100% - 16px * 2);
-  /* outline: 1px solid red; */
 }
 
 .container h1 {
@@ -140,7 +135,6 @@ main {
 #choices > li {
   border: 1px solid #ccc;
   border-radius: 4px;
-  /* padding: 10px; */
   margin-bottom: 10px;
   cursor: pointer;
   width: 60px;
@@ -154,9 +148,6 @@ main {
 }
 
 #choices > li.correct {
-  /* background: #d4edda;
-  border-color: #c3e6cb;
-  color: #155724; */
   background: #f8b800;
   color: #ea5419;
   border-color: #ea5419;
@@ -164,9 +155,6 @@ main {
 }
 
 #choices > li.wrong {
-  /* background: #f8d8da;
-  border-color: #f5c6cb;
-  color: #721c24; */
   background: #0DB8D9;
   color: #2660AC;
   border-color: #2660AC;
@@ -185,23 +173,7 @@ main {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
 
-#btn {
-  /* margin-top: 36px; */
-}
-
-#result > a,
-#celebration > a {
-  animation: blink-btn step-end 1.5s infinite;
-  display: block;
-}
-
-@keyframes blink-btn {
-  from, to { opacity: 1; }
-  50% { opacity: 0; }
-}
-
 #btn.disabled {
-  /* background: #efcfe2; */
   background: #cd729e;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
   opacity: 0.7;
@@ -211,7 +183,6 @@ main {
   position: absolute;
   max-width: 400px;
   width: calc(100% - 16px * 2);
-  /* width: 400px; */
   background: #ffe600;
   color: #2660AC;
   padding: 30px;
@@ -229,6 +200,17 @@ main {
   transform: translateY(-500px);
 }
 
+#result > a,
+#celebration > a {
+  animation: blink-btn step-end 1.5s infinite;
+  display: block;
+}
+
+@keyframes blink-btn {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 #result > p,
 #celebration > p {
   font-size: 24px;
@@ -236,7 +218,6 @@ main {
 
 #celebration > p {
   color: #153692;
-  /* color: #00a0e8; */
 }
 
 #result > p,
@@ -250,11 +231,9 @@ main {
   position: absolute;
   max-width: 400px;
   width: calc(100% - 16px * 2);
-  /* width: 400px; */
   background: #fff;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* bottom: 190px; */
   top: 100px;
   left: 0;
   right: 0;
@@ -263,14 +242,10 @@ main {
   text-align: center;
   transition: 0.4s;
   opacity: 1;
-  /* display: block; */
-  /* border: 16px solid #f8b800;  */
-  /* background-color: #ffe600; */
 }
 
 #celebration {
-  /* bottom: calc((var(--vh, 1vh) * 50) + 66px); */
-  z-index: 10;
+  background-color: #efcfe2;
 }
 
 #correct-answer {
@@ -279,12 +254,6 @@ main {
 
 #wrong-answer {
   border: 16px solid #0DB8D9; 
-}
-
-#celebration {
-  /* position: relative; */
-  /* border: 16px solid #efcfe2;  */
-  background-color: #efcfe2;
 }
 
 #correct-answer.hidden,
@@ -337,7 +306,6 @@ main {
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  /* outline: 1px solid red; */
 }
 
 .cross span {
@@ -364,7 +332,6 @@ main {
 i {
   font-size: 56px;
   display: inline-block;
-  
   opacity: 0;
 }
 
@@ -374,7 +341,6 @@ i.appear {
 
 i:nth-child(1) {
   color: #efa72b;
-  /* animation-delay: 9s; */
 }
 
 i:nth-child(2) {
@@ -411,7 +377,6 @@ i:nth-child(5) {
   }
 }
 
-
 footer small {
   font-size: 14px;
   width: fit-content;
@@ -425,7 +390,7 @@ footer small {
 }
 
 /* --------------------------
-        レスポンシブ  small screen
+  レスポンシブ  small screen
 -----------------------------*/
 @media screen and (max-width: 599px){
 
@@ -435,17 +400,14 @@ footer small {
 
   header h1 span {
     font-size: 32px;
-
   }
 
   .container {
-    /* height: calc((var(--vh, 1vh) * 100) - 76px - 24px - 14px - 60px); */
     height: calc((var(--vh, 1vh) * 100) - 76px - 35px);
-
   }
+
   .container h1 {
     font-size: 18px;
-  
   }
 
   #btn {
@@ -457,22 +419,22 @@ footer small {
   }
 
   #result > p,
-#celebration > p {
+  #celebration > p {
   font-size: 20px;
-}
+  }
 
-#choices {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-}
+  #choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
 
-#choices > li {
-  width: 40px;
-  height:40px;
-  line-height: 40px;
-  margin-bottom: 0;
-}
+  #choices > li {
+    width: 40px;
+    height:40px;
+    line-height: 40px;
+    margin-bottom: 0;
+  }
 
 }

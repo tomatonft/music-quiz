@@ -48,18 +48,18 @@
   }
 
   function checkAnswer(li) {
-    // if (isAnswered === true) {
+    
     if (isAnswered) {
       return;
     }
     isAnswered = true;
     if (li.textContent === quizSet[currentNum].c[0]) {
       li.classList.add('correct');
-      correctAnswer.classList.remove('hidden');  // 追加
+      correctAnswer.classList.remove('hidden');
       score++;
     } else {
       li.classList.add('wrong');
-      wrongAnswer.classList.remove('hidden');  // 追加
+      wrongAnswer.classList.remove('hidden');
       correction.textContent = `せいかいは、${quizSet[currentNum].c[0]}だよ！`;
     }
 
@@ -78,8 +78,8 @@
      
     question.appendChild(img_notes);
     remainingNumbers.textContent = `あと${quizSet.length - currentNum}もん！！`;
-    correctAnswer.classList.add('hidden');  // 追加
-    wrongAnswer.classList.add('hidden');  // 追加
+    correctAnswer.classList.add('hidden'); 
+    wrongAnswer.classList.add('hidden');
 
     while(choices.firstChild) {
       choices.removeChild(choices.firstChild);
@@ -138,29 +138,6 @@
      }
       setQuiz();
     }
-    // if (currentNum === quizSet.length - 1) {
-    //    scoreLabel.textContent = `${quizSet.length}もんちゅう ${score}もんせいかい！`;
-    //    result.classList.remove('hidden');
-
-    //    if (score === quizSet.length) {
-    //     celebration.classList.remove('hidden');
-    //    }
-    // } else {
-    //   currentNum++;
-    //   while(question.firstChild) {
-    //    question.removeChild(question.firstChild);
-    //  }
-    //   setQuiz();
-    // }
   });
-
-  // 全問正解の場合は風船フワー
-  // もう一回やってみようは点滅させる
-
-  // const imageArea = document.getElementById('imageArea');
-  // const images = ['img/do.png', 'img/re.png', 'img/mi.png', 'img/fa.png', 'img/sol.png', 'img/la.png', 'img/si.png'];
-  
-  // const imageNo = Math.floor( Math.random() * images.length)
-  // imageArea.src = images[imageNo];
 
 }
