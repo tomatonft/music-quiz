@@ -269,7 +269,8 @@ main {
 }
 
 #celebration {
-  bottom: calc((var(--vh, 1vh) * 50) + 66px);
+  /* bottom: calc((var(--vh, 1vh) * 50) + 66px); */
+  z-index: 10;
 }
 
 #correct-answer {
@@ -281,7 +282,7 @@ main {
 }
 
 #celebration {
-  position: relative;
+  /* position: relative; */
   /* border: 16px solid #efcfe2;  */
   background-color: #efcfe2;
 }
@@ -356,7 +357,7 @@ main {
 
 .balloons {
   position: absolute;
-  bottom: -200px;
+  bottom: -100px;
   text-align: center;
 }
 
