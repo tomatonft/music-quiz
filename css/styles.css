@@ -110,7 +110,7 @@ main {
   /* margin: 0 auto; */
   max-width: 600px;
   width: calc(100% - 16px * 2);
-  
+  /* outline: 1px solid red; */
 }
 
 .container h1 {
@@ -128,7 +128,7 @@ main {
 }
 
 #question {
-  margin-bottom: 16px;
+  margin-top: 16px;
   font-weight: bold;
 }
 
