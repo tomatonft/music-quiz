@@ -395,7 +395,8 @@ footer small {
 @media screen and (max-width: 599px){
 
   header {
-    height: 68px;
+    height: 60px;
+    /* height: 68px; */
   }
 
   header h1 span {
@@ -403,7 +404,8 @@ footer small {
   }
 
   .container {
-    height: calc((var(--vh, 1vh) * 100) - 84px - 35px);
+    height: calc((var(--vh, 1vh) * 100) - 76px - 35px);
+    /* height: calc((var(--vh, 1vh) * 100) - 84px - 35px); */
   }
 
   .container h1 {
